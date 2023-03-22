@@ -7,7 +7,7 @@
 
 
 body {
-  --body-load-time : 0.7s;
+  --main-load-time : 0.7s;
   --nav-load-time : 0.5s;
 }
 
@@ -50,7 +50,7 @@ nav ul li a{
 
 nav ul li::after {
   content: '';
-  height: 2px;
+  height: 1px;
   width: 0;
   background: white;
   position: absolute;
@@ -76,7 +76,7 @@ nav ul li:hover::after {
 }
 
 .main_container {
-  animation: main-load var(--body-load-time) ease-out;
+  animation: main-load var(--main-load-time) ease-out;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -92,6 +92,90 @@ nav ul li:hover::after {
   margin: 1rem 0rem;
 }
 
+.burger {
+  width: 42px;
+  height: 24px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+}
+
+.burger span {
+  width: 100%;
+  height: 4px;
+  background-color: #FFF8EA;;
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.burger span::before,
+.burger span::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: #FFF8EA;;
+  transition: transform 0.5s ease-in-out;
+}
+
+.burger span::before {
+  transform: translateY(-10px);
+}
+
+.burger span::after {
+  transform: translateY(10px);
+}
+
+.burger.active span {
+  background: transparent;
+}
+
+.burger.active span::before {
+  transform: translateY(0px) rotateZ(45deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.burger.active span::after {
+  transform: translateY(0px) rotateZ(-45deg);
+  transition: transform 0.5s ease-in-out;
+}
+
+.link {
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(7px);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  z-index: 1;
+}
+
+.link.menu_burger {
+  display: flex;
+}
+
+.link ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  color: black;
+}
+
+.nav_burger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 @keyframes nav-load {
   0% {
     transform: translateY(-100%);
@@ -103,14 +187,9 @@ nav ul li:hover::after {
 
 @keyframes main-load {
   0% {
-    transform: translateY(-1000%);
+    transform: translateY(1000%);
   }
-  30% {
-    transform: translateY(-700%);
-  }
-  50% {
-    transform: translateY(-500%);
-  }
+
   100% {
     transform: translateY(0%);
   }
