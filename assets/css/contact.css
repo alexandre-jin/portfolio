@@ -86,24 +86,23 @@ main {
   margin-top: 7rem;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .container_main {
   animation: main-load var(--main-load-time) ease-out;
   margin-top: 10rem;
   display: flex;
-  align-items: center;
+  text-align: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-left: 4rem;
 }
 
-.subtitle, .description {
+.container_contact {
+  flex: 1;
+}
+
+.description {
   margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  text-align: center;
 }
 
 .description a {
