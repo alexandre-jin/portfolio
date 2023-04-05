@@ -75,6 +75,10 @@ nav ul li:hover::after {
   object-fit: cover;
 }
 
+.title {
+  color: #FFF8EA;
+}
+
 .main_container {
   animation: main-load var(--main-load-time) ease-out;
   width: 100%;

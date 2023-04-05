@@ -75,6 +75,10 @@ nav ul li:hover::after {
   object-fit: cover;
 }
 
+.title {
+  color: #FFF8EA;
+}
+
 .main_container {
   animation: main-load var(--main-load-time) ease-out;
   margin-top: 5rem;
@@ -104,7 +108,7 @@ nav ul li:hover::after {
 }
 
 
-.title, .description {
+.subtitle, .description {
   margin-top: 1rem;
   display: flex;
   justify-content: center;
