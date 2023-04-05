@@ -7,12 +7,11 @@
 
 
 body {
-  --main-load-time : 0.7s;
-  --nav-load-time : 0.5s;
+  --main-load-time: 0.7s;
+  --nav-load-time: 0.5s;
 }
 
 .banner {
-
   width: 100%;
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75),
@@ -38,10 +37,10 @@ nav ul {
 
 nav li {
   position: relative;
- list-style: none;
+  list-style: none;
 }
 
-nav ul li a{
+nav ul li a {
   text-transform: uppercase;
   font-size: medium;
   text-decoration: none;
@@ -60,7 +59,7 @@ nav ul li::after {
 }
 
 nav ul li:hover::after {
- width: 100%;
+  width: 100%;
 }
 
 .logo {
@@ -75,31 +74,35 @@ nav ul li:hover::after {
   object-fit: cover;
 }
 
-.main_container {
-  animation: main-load var(--main-load-time) ease-out;
-  margin-top: 5rem;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly
+.title {
+  color: #FFF8EA;
+}
 
+.container_main {
+  animation: main-load var(--main-load-time) ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+  color: #FFF8EA;
+  gap: 5rem;
+}
+
+.summary {
+  max-width: 500px;
 }
 
 .project {
   height: 300px;
-  width: 300px;
+  width: 600px;
 }
 
 .project img {
   height: 100%;
   width: 100%;
-  border-radius: 20%;
+  border-radius: 10%;
   object-fit: cover;
-}
-
-.title,.description {
-  display: flex;
-  justify-content: center;
-  color: #FFF8EA;
 }
 
 .burger {
@@ -166,6 +169,7 @@ nav ul li:hover::after {
   align-items: center;
   display: none;
   z-index: 1;
+  text-shadow: black 1px 0 8px;
 }
 
 .link.menu_burger {
@@ -177,7 +181,6 @@ nav ul li:hover::after {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  color: black;
 }
 
 .nav_burger {
@@ -187,11 +190,11 @@ nav ul li:hover::after {
 }
 
 
+
 @keyframes nav-load {
   0% {
-    transform: translateY(100%);
+    transform: translateY(-100%);
   }
-
   100% {
     transform: translateY(0%);
   }
@@ -206,6 +209,3 @@ nav ul li:hover::after {
     transform: translateY(0%);
   }
 }
-
-
-

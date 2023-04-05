@@ -52,7 +52,7 @@ nav ul li::after {
   content: '';
   height: 1px;
   width: 0;
-  background: white;
+  background: rgb(182, 182, 182);
   position: absolute;
   left: 0;
   bottom: -5px;
@@ -156,6 +156,7 @@ nav ul li:hover::after {
   align-items: center;
   display: none;
   z-index: 1;
+  text-shadow: black 1px 0 8px;
 }
 
 .link.menu_burger {
@@ -167,7 +168,6 @@ nav ul li:hover::after {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  color: black;
 }
 
 .nav_burger {

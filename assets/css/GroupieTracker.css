@@ -95,13 +95,13 @@ nav ul li:hover::after {
 
 .project {
   height: 300px;
-  width: 400px;
+  width: 950px;
 }
 
 .project img {
   height: 100%;
   width: 100%;
-  border-radius: 20%;
+  border-radius: 10%;
   object-fit: cover;
 }
 
