@@ -201,6 +201,54 @@ nav ul li:hover::after {
 }
 
 
+@media screen and (max-width : 1024px) {
+
+  nav {
+    margin-left: 1%;
+    margin-right: 6%;
+  }
+
+}
+
+@media screen and (max-width : 899px) {
+  .banner {
+    height: 140vh;
+  }
+
+  #third {
+    margin-top: 10rem;
+  }
+
+  .link {
+    height: 140vh;
+  }
+}
+
+@media screen and (max-width : 599px) {
+
+  .banner {
+    height: 200vh;
+  }
+
+  .title {
+    display: none;
+  }
+
+  #third {
+    margin-top: 0;
+  }
+
+  .main_container {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  .link {
+    height: 200vh;
+  }
+}
+
 @keyframes nav-load {
   0% {
     transform: translateY(100%);

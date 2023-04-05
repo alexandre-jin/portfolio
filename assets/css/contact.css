@@ -196,6 +196,39 @@ main {
   align-items: center;
 }
 
+@media screen and (max-width : 1024px) {
+
+  nav {
+    margin-left: 1%;
+    margin-right: 6%;
+  }
+
+}
+
+@media screen and (max-width : 599px) {
+
+  .banner {
+    height: 130vh;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .container_main {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 10rem;
+  }
+
+  .link {
+    height: 130vh;
+  }
+
+  .paragraph {
+    text-align: center;
+  }
+}
 
 
 @keyframes nav-load {
