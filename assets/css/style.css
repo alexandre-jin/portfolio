@@ -197,7 +197,7 @@ nav ul li:hover::after {
   }
 }
 
-@media screen and (max-width : 425px) {
+@media screen and (max-width : 680px) {
 
   .title {
     display: none;

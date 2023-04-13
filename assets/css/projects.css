@@ -251,7 +251,7 @@ nav ul li:hover::after {
 
 @keyframes nav-load {
   0% {
-    transform: translateY(100%);
+    transform: translateY(-100%);
   }
 
   100% {

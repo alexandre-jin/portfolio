@@ -205,6 +205,23 @@ main {
 
 }
 
+@media screen and (max-width : 768px) {
+
+  nav {
+    margin-left: 1%;
+    margin-right: 7%;
+  }
+
+}
+
+@media screen and (max-width : 765px) {
+
+  .title {
+    display: none;
+  }
+
+}
+
 @media screen and (max-width : 599px) {
 
   .banner {

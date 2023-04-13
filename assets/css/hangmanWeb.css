@@ -83,6 +83,7 @@ nav ul li:hover::after {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: center;
   margin-top: 5rem;
   color: #FFF8EA;
@@ -94,7 +95,8 @@ nav ul li:hover::after {
 }
 
 .project {
-  height: 300px;
+  max-width: 100%;
+  height: auto;
   width: 400px;
 }
 
@@ -189,7 +191,56 @@ nav ul li:hover::after {
   align-items: center;
 }
 
+@media screen and (max-width : 1024px) {
 
+  nav {
+    margin-left: 1%;
+    margin-right: 6%;
+  }
+}
+
+@media screen and (max-width : 768px) {
+
+  nav {
+    margin-left: 1%;
+    margin-right: 6%;
+  }
+}
+
+@media screen and (max-width : 680px) {
+
+  .title {
+    display: none;
+  }
+}
+
+@media screen and (max-width : 399px) {
+
+  .banner {
+    width: 120%;
+    height: 120vh;
+  }
+
+  .link {
+    width: 120%;
+    height: 120vh;
+  }
+  
+}
+
+@media screen and (max-width : 322px) {
+
+  .banner {
+    width: 125%;
+    height: 125vh;
+  }
+
+  .link {
+    width: 125%;
+    height: 125vh;
+  }
+  
+}
 
 @keyframes nav-load {
   0% {
