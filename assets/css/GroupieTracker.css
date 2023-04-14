@@ -191,6 +191,16 @@ nav ul li:hover::after {
   align-items: center;
 }
 
+@media screen and (max-height : 707px) {
+  .banner {
+    height: 120vh;
+  }
+
+  .link {
+    height: 120vh;
+  }
+}
+
 @media screen and (max-width : 1024px) {
 
   nav {
