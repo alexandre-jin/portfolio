@@ -193,11 +193,11 @@ nav ul li:hover::after {
 
 @media screen and (max-height : 707px) {
   .banner {
-    height: 120vh;
+    height: 130vh;
   }
 
   .link {
-    height: 120vh;
+    height: 130vh;
   }
 }
 
