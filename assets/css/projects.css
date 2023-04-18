@@ -94,12 +94,6 @@ nav ul li:hover::after {
   width: 300px;
 }
 
-.image {
-  height: 300px;
-  width: 300px;
-}
-
-
 .project img {
   height: 100%;
   width: 100%;
@@ -110,8 +104,6 @@ nav ul li:hover::after {
 
 .subtitle, .description {
   margin-top: 1rem;
-  display: flex;
-  justify-content: center;
   text-align: center;
   color: #FFF8EA;
 }
