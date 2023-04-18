@@ -84,8 +84,8 @@ main {
 
 .paragraph {
   margin-top: 7rem;
-  display: flex;
-  justify-content: center;
+  width: 100%;
+  text-align: center;
 }
 
 .container_main {
